@@ -11,8 +11,16 @@ if [ ! -f $filename ] ; then
         echo -n "=" >> $filename
     done
     echo "" >> $filename
+    for i in $(seq 1 80) ; do
+        echo -n "-" >> $filename
+    done
+    echo "" >> $filename
     echo "" >> $filename
     echo "# Assignments" >> $filename
+    for i in $(seq 1 80) ; do
+        echo -n "-" >> $filename
+    done
+    echo "" >> $filename
 fi
 
 vim $filename
