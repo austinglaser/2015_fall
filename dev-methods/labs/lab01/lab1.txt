@@ -1,0 +1,47 @@
+What do the following commands do?
+
+Command | Does what?
+--------|------------------
+date    | Prints current date
+ls -ltr | Shows all files, sorted by reverse date modified
+cd ..   | moves up a directory
+pwd     | prints the current path ("working directory")
+who     | prints who is logged in
+whoami  | prints just username
+man man | shows manual for the 'man' (manual) command
+env     | Shows all set environment variables
+
+How would you do the following?
+
+Command                                          | Goal
+-------------------------------------------------|--------------------------------------------------------------
+mkdir cs3308 && cd cs3308                        | Make a directory named 'cs3308' and move into that directory.
+cd .. && mv cs3308 csci3308                      | Rename your directory 'cs3308' to 'csci3308'
+cd /                                             | Change to the root directory
+cp file.txt file_copy.txt                        | Make a copy of a file
+rm file_copy.txt                                 | Delete the copy of your file
+mkdir tmp && rmdir tmp OR mkdir tmp && rm -r tmp | Make a directory named 'tmp'. Then delete that directory
+cat file.txt OR vim file.txt OR less file.txt    | View the contents of a file.
+head file.txt                                    | view just the beginning of a file
+tail file.txt                                    | view just the end of a file
+grep -l * 'the'                                  | list all files that contain the word 'the' in the file
+readlink -f books.txt                            | list full path to all files named 'books.txt'
+zip dir.zip *                                    | Zip the contents in your directory into a file name dir.zip
+unzip dir.zip -d tmp                             | Unzip your zipped file 'dir.zip' into a new directory named 'tmp'
+cd .. && tar cf dir.tar lab01                    | Tar the contents in your directory into a file named dir.tar
+mkdir tmp ** tar xf dir.tar -C tmp               | Unizp your tarred file into a new directory named tmp
+touch file.txt                                   | Modify a file's last modified timestamp to now. This also creates a new file if it doesn't currently exist
+
+Command                            | Does what?
+---------------------------------- | ------------------------------
+sort -t: -k1,1 passwd.txt          | Sort the file based on the userid
+sort -n -t: -k3,3 passwd.txt       | Sort the file based on the userid
+sort -n -t: -k4,4 -k3,3 passwd.txt | Sort the file based on the GID, then on UID
+grep Marx passwd.txt               | Show all the lines in the file with 'Marx' in them
+wc -l passwd.txt                   | Get the number of lines in the file
+wc -l passwd.txt > tmp             | Put wordount in 'tmp'
+./passwordount.sh                  | Runs script
+passwordcount.sh                   | Looks in all directories in PATH, which doesn't include current
+chmod u+x passwordcount.sh         | Make passwordcount executable by user
+chmod u=rwx passwordcount.sh       | Make passwordcount executable by user
+chmod 765 passwordcount.sh         | Permissions -rwxrw-r--
