@@ -1,0 +1,7 @@
+# Generated files
+*.o
+stud
+core
+
+# Generated directory
+build/
