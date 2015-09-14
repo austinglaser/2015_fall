@@ -1,0 +1,3 @@
+[submodule "dev-methods/project"]
+	path = dev-methods/project
+	url = git@github.com:austinglaser/csci3308-project.git
