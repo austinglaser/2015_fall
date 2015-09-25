@@ -1,0 +1,10 @@
+User story points
+1: 2
+2: 8 (notification system poorly defined)
+3: 3 (global setting of public, private, secret)
+4: 8 (Broken up)
+    4a: 5 (Group, with members and administrator)
+    4b: 2 (User group access request)
+5: 2 (re-use the concept of Person and Friend)
+6: 2 (like friending)
+7: 2
